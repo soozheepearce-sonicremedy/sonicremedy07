@@ -251,9 +251,6 @@ document.addEventListener('click', function (e) {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-  $('formulaTrigger').addEventListener('click', (e) => { e.stopPropagation(); toggleFormulaMenu(); });
-  $('formulaMenu').addEventListener('click', (e) => e.stopPropagation());
-  document.addEventListener('click', closeFormulaMenu);
   const lb = $('lightbox');
   if (lb) {
     lb.addEventListener('click', function (e) {
